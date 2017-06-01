@@ -13,10 +13,13 @@ public class tokei {
             final Clip line = AudioSystem.getClip();
             line.open(ais);
             line.start();
+            System.out.println("start");
             Thread.sleep(1);
             line.drain();
             line.stop();
+            System.out.println("stop");
             line.close();
+            System.out.println("close");
         } catch (final Exception e) {
             System.out.println(e);
         }
